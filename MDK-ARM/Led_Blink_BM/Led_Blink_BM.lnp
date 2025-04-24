@@ -1,0 +1,25 @@
+--cpu Cortex-M0
+"led_blink_bm\startup_stm32f030x8.o"
+"led_blink_bm\main.o"
+"led_blink_bm\stm32f0xx_it.o"
+"led_blink_bm\stm32f0xx_hal_msp.o"
+"led_blink_bm\stm32f0xx_hal_tim.o"
+"led_blink_bm\stm32f0xx_hal_tim_ex.o"
+"led_blink_bm\stm32f0xx_hal_rcc.o"
+"led_blink_bm\stm32f0xx_hal_rcc_ex.o"
+"led_blink_bm\stm32f0xx_hal.o"
+"led_blink_bm\stm32f0xx_hal_i2c.o"
+"led_blink_bm\stm32f0xx_hal_i2c_ex.o"
+"led_blink_bm\stm32f0xx_hal_gpio.o"
+"led_blink_bm\stm32f0xx_hal_dma.o"
+"led_blink_bm\stm32f0xx_hal_cortex.o"
+"led_blink_bm\stm32f0xx_hal_pwr.o"
+"led_blink_bm\stm32f0xx_hal_pwr_ex.o"
+"led_blink_bm\stm32f0xx_hal_flash.o"
+"led_blink_bm\stm32f0xx_hal_flash_ex.o"
+"led_blink_bm\stm32f0xx_hal_exti.o"
+"led_blink_bm\system_stm32f0xx.o"
+--strict --scatter "Led_Blink_BM\Led_Blink_BM.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Led_Blink_BM.map" -o Led_Blink_BM\Led_Blink_BM.axf
